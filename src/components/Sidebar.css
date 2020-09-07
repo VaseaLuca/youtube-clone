@@ -1,5 +1,5 @@
 .sidebar{
-  width: 250px;
+  width: 230px;
   height: 100vh;
 }
 .sidebar-menu {
@@ -16,7 +16,21 @@ hr {
   display: flex;
   padding: 7px 24px;
   font-size: 13px;
+  cursor: pointer;
 }
+.home:hover{
+background-color: #e5e5e5;
+}
+.trending:hover{
+background-color: #e5e5e5;
+}
+.subscriptions:hover{
+background-color: #e5e5e5;
+}
+.library:hover{
+background-color: #e5e5e5;
+}
+
 .subscriptions{
   padding-bottom: 7px;
 }
