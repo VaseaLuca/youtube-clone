@@ -1,11 +1,16 @@
 import React from 'react';
 
+import Header from './Header';
+import Sidebar from './Sidebar';
+import Contents from './Contents'
 import './App.css';
 
 function App() {
   return (
     <div>
-      <h1>Hello there, we are going to build a Youtube Clone</h1>
+      <Header />
+      <Sidebar />
+      <Contents />
     </div>
   )
 }
