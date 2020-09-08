@@ -13,13 +13,13 @@ background-color: #e5e5e5;
 .sidebar-row:hover > .menu-title {
   font-weight: bold;
 }
-.sidebar-row.selected{
+.sidebar-row.active {
   background-color: #e5e5e5;
 }
-.sidebar-row.selected > .icon{
+.sidebar-row.active >.icon {
   color: red;
 }
-.sidebar-row.selected > .menu-title{
+.sidebar-row.active >.menu-title {
   font-weight: bold;
 }
  

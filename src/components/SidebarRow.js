@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './SidebarRow.css'
+import "./SidebarRow.css";
 
 function SidebarRow({ selected, Icon, title }) {
+
   return (
-    <div className={`sidebar-row ${selected && 'selected'}`} >
+    <div className={`sidebar-row ${selected && "active"}`}>
       <Icon className="icon" style={{ fontSize: "20px" }} />
       <div className="menu-title">{title}</div>
     </div>

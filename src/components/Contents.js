@@ -2,8 +2,8 @@ import React from 'react';
 
 function Contents() {
   return (
-  <div>
-    Contents
+  <div className='contets'>
+    <h3>Recomended</h3>
   </div>
   )
 }
