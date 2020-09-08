@@ -24,6 +24,7 @@
 .nav-logo {
   width: 85px;
   align-content: center;
+  cursor: pointer;
 }
 .nav-search {
   display: flex;

@@ -1,5 +1,5 @@
 .sidebar{
-  width: 230px;
+  width: 220px;
   height: 100vh;
 }
 .sidebar-menu {
@@ -7,29 +7,28 @@
 }
 hr {
   border: none;
-  height: .1px;
-  background:#80808069;
+  height: .09px;
+  background:#80808041;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.home, .trending, .subscriptions, .library {
+.home, .trending, .subscriptions,
+.library, .history, .your-videos,
+.watch-later, .liked-videos, .expand {
   display: flex;
-  padding: 7px 24px;
+  padding: 8px 24px;
   font-size: 13px;
   cursor: pointer;
 }
-.home:hover{
+.home:hover,.trending:hover, .subscriptions:hover,
+.library:hover, .history:hover, .your-videos:hover,
+.watch-later:hover, .watch-later:hover, .liked-videos:hover,
+.expand:hover {
 background-color: #e5e5e5;
 }
-.trending:hover{
-background-color: #e5e5e5;
-}
-.subscriptions:hover{
-background-color: #e5e5e5;
-}
-.library:hover{
-background-color: #e5e5e5;
-}
+
+
+
 
 .subscriptions{
   padding-bottom: 7px;
