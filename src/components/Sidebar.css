@@ -12,32 +12,3 @@ hr {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.home, .trending, .subscriptions,
-.library, .history, .your-videos,
-.watch-later, .liked-videos, .expand {
-  display: flex;
-  padding: 8px 24px;
-  font-size: 13px;
-  cursor: pointer;
-}
-.home:hover,.trending:hover, .subscriptions:hover,
-.library:hover, .history:hover, .your-videos:hover,
-.watch-later:hover, .watch-later:hover, .liked-videos:hover,
-.expand:hover {
-background-color: #e5e5e5;
-}
-
-
-
-
-.subscriptions{
-  padding-bottom: 7px;
-}
-
-.icon {
-  margin-right: 24px ;
-  color: #606060;
-}
-.menu-title {
-  margin: auto 0;
-}

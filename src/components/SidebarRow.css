@@ -1,0 +1,33 @@
+.sidebar-row{
+  display: flex;
+  padding: 8px 24px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.sidebar-row:hover{
+background-color: #e5e5e5;
+}
+.sidebar-row:hover > .icon {
+  color: red;
+}
+.sidebar-row:hover > .menu-title {
+  font-weight: bold;
+}
+.sidebar-row.selected{
+  background-color: #e5e5e5;
+}
+.sidebar-row.selected > .icon{
+  color: red;
+}
+.sidebar-row.selected > .menu-title{
+  font-weight: bold;
+}
+ 
+.icon {
+margin-right: 24px;
+color: #606060
+}
+.menu-title {
+  margin: auto 0;
+}
+

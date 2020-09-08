@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SidebarRow from './SidebarRow'
 import HomeSharpIcon from "@material-ui/icons/HomeSharp";
 import WhatshotSharpIcon from "@material-ui/icons/WhatshotSharp";
 import SubscriptionsSharpIcon from "@material-ui/icons/SubscriptionsSharp";
@@ -13,20 +14,22 @@ import ExpandMoreSharpIcon from "@material-ui/icons/ExpandMoreSharp";
 import './Sidebar.css'
 
 function Sidebar() {
+
   return (
     <div className="sidebar">
-        <div className='sidebar-menu'>
-      <div className="home"><HomeSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Home</div></div>
-      <div className="trending"><WhatshotSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Trending</div> </div>
-      <div className="subscriptions"><SubscriptionsSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Subscriptions</div></div>
-      <hr/>
-      <div className="library"><VideoLibrarySharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Library</div></div>
-      <div className='history'><HistorySharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>History</div></div>
-      <div className="your-videos"><PersonalVideoSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Your videos</div></div>
-        <div className="watch-later"><WatchLaterSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Watch later</div></div>
-          <div className="liked-videos"><ThumbUpSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Liked videos</div></div>
-            <div className="expand"><ExpandMoreSharpIcon className='icon' style={{fontSize: '20px'}} /><div className='menu-title'>Show more</div></div>
-        </div>
+      <div className="sidebar-menu">
+        <SidebarRow selected Icon={HomeSharpIcon} title="Home" />
+        <SidebarRow Icon={WhatshotSharpIcon} title="Trending" />
+        <SidebarRow Icon={SubscriptionsSharpIcon} title="Subscriptions" />
+        <hr />
+        <SidebarRow Icon={VideoLibrarySharpIcon} title="Library" />
+        <SidebarRow Icon={HistorySharpIcon} title="History" />
+        <SidebarRow Icon={PersonalVideoSharpIcon} title="Your videos" />
+        <SidebarRow Icon={WatchLaterSharpIcon} title="Watch later" />
+        <SidebarRow Icon={ThumbUpSharpIcon} title="Liked videos" />
+        <SidebarRow Icon={ExpandMoreSharpIcon} title="Show more" />
+        <hr />
+      </div>
     </div>
   );
 }
