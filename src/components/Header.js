@@ -34,35 +34,22 @@ function Header() {
           ) : (
             <SearchIcon style={{ fontSize: "20px", color: "#aeaeae" }} />
           )}
+          <span className="tooltiptext">Search</span>
         </button>
-        {searchIsHover && (
-          <div
-            style={{
-              position: "absolute",
-              fontSize: "13px",
-              marginTop: "40px",
-              left: "60%",
-              right:'0',
-              width:'40px',
-              padding: "9px",
-              backgroundColor: "#0000007c",
-              color: "white",
-            }}
-          >
-            Search
-          </div>
-        )}
       </div>
       <div className="space" />
       <div className="nav-rightbar">
         <div className="nav-createIcon">
           <VideoCallIcon />
+          <span className="tooltiptext">Create</span>
         </div>
         <div className="nav-apps">
           <AppsIcon />
+          <span className="tooltiptext">Youtube apps</span>
         </div>
         <div className="nav-notifications">
           <NotificationsIcon />
+          <span className="tooltiptext">Notifications</span>
         </div>
 
         <div className="nav-singIn">
